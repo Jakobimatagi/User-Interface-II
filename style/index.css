@@ -1,1 +1,445 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    background-color:#96dbe3;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+header h1{
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    padding:0 1rem;
+    color: black;
+    
+}
+header h1:hover{
+    font-size: 4rem;
+    margin: 2rem 1rem;
+    padding:0 1rem;
+    color: black;
+    
+}
+nav{
+   
+    
+}
+nav a{
+   
+    text-decoration: none;
+    margin: 0 3rem;
+    padding:0 1rem;
+    font-size: 2rem;
+    color: black;
+    border-radius: 50%;
+    
+    
+}
+nav a:hover{  
+    text-decoration: none;
+    margin: 0 3rem;
+    padding:0 1rem;
+    font-size: 2rem;
+    color: black;
+    border-radius: 50%;
+   
+}
+.top{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    font-size: 3rem;
+}
+.gallery img{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    padding: 0 4rem;
+
+}
+.topButton{
+    /* border: 2px solid white; */
+    justify-content: center;
+    position: absolute;
+    color: white;
+    padding: .5rem;
+    margin-top: 8rem;
+}
+.top img{
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 90%;
+}
+#myProjects{
+    color:black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem; 
+}
+#myProjects:hover{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.gallery{
+    /* border: 2px solid red; */
+}
+.box{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.box h3{
+    /* border: 2px solid red; */
+    display: flex;
+    margin: auto 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+    
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    
+}
+footer a{
+    text-decoration: none;
+    margin: auto 0;
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+
+}
+footer a:hover{
+    background-color:black;
+    color:white;
+}
+/* media queries */
+
+@media(max-width: 800px){
+    body{
+        background-color:#96dbe3;
+    }
+    a{
+        text-decoration: none;
+    }
+    .header{
+        display: b;
+        height: 10vh;
+        justify-content: space-around;
+        margin-bottom: 4rem;
+        
+        
+    }
+    header h1{
+        
+        justify-content: space-between;
+        font-size: 4rem;
+        color: black;
+        display: inline;
+        
+        
+    }
+    header h1:hover{
+        text-decoration: underline;
+        color: black;
+        border-radius: 50%;
+        padding:0 1rem;
+        
+    }
+    nav{
+        position: absolute;
+        margin-top: 10%;
+    }
+    nav a{
+        display: flex;
+        text-decoration: none;
+        padding-top:1rem;
+        font-size: 2rem;
+        color: black;
+        border-radius: 50%;
+    }
+    nav a:hover{
+        text-decoration: none;
+        background-color: white;
+        padding:1rem ;
+        font-size: 2rem;
+        color: black;
+        border-radius: 50%; 
+        align-items: center;   
+    }
+    .top{
+        padding-top: 25%;
+        display: flex;
+        justify-content: center;
+        height:30%;
+        width: 100%;
+        /* border: 2px solid red; */
+        font-size: 3rem;
+    }
+    .gallery img{
+        width: 15rem;
+        height: 10rem;
+        padding: 0 5rem;
+        
+        
+    
+    }
+    .topButton{
+        /* border: 2px solid white; */
+        justify-content: center;
+        position: absolute;
+        color: white;
+        padding: .5rem;
+        margin-top: 5rem;
+    }
+    .top img{
+        /* border: 2px solid red; */
+        width: 60%;
+        height: 90%;
+    }
+    #myProjects{
+        color:black;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        padding: 1rem; 
+    }
+    #myProjects:hover{
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+    }
+    .gallery{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .box{
+        margin:5rem 0;
+        
+    }
+    .box h3{
+        margin: auto 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    footer{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid red; */
+        paddding-bottom: 2rem;
+    }
+    footer a{
+        text-decoration: none;
+        margin: auto 0;
+        font-size: 2rem;
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+    footer a:hover{
+        background-color:black;
+        color:white;
+    }
+}
+/* media querie */
+@media(max-width: 500px){
+
+    }
+    .header{
+        display: b;
+        height: 10vh;
+        justify-content: space-around;
+        margin-bottom: 4rem;
+    }
+    header h1{
+        
+        justify-content: space-between;
+        font-size: 3rem;
+        color: black;
+        display: inline;
+        
+        
+    }
+    header h1:hover{
+        text-decoration: underline;
+        color: black;
+        border-radius: 50%;
+        padding:0 1rem;
+        
+    }
+    nav{
+        position: absolute;
+        margin-top: 10%;
+    }
+    nav a{
+        display: flex;
+        text-decoration: none;
+        padding-top:1rem;
+        font-size: 2rem;
+        color: black;
+        border-radius: 50%;
+    }
+    nav a:hover{
+        text-decoration: none;
+        background-color: white;
+        padding:1rem ;
+        font-size: 2rem;
+        color: black;
+        border-radius: 50%; 
+        align-items: center;   
+    }
+    .top{
+        padding-top: 25%;
+        display: flex;
+        justify-content: center;
+        height:35%;
+        width: 100%;
+        /* border: 2px solid red; */
+        font-size: 2rem;
+    }
+    .gallery img{
+        width: 10rem;
+        height: 5rem;
+        padding: 0 2rem;
+        
+        
+    
+    }
+    .topButton{
+        /* border: 2px solid white; */
+        justify-content: center;
+        position: absolute;
+        color: white;
+        padding: .5rem;
+        margin-top: 5rem;
+    }
+    .top img{
+        /* border: 2px solid red; */
+        width: 60%;
+        height: 90%;
+    }
+    #myProjects{
+        color:black;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        padding: 1rem; 
+    }
+    #myProjects:hover{
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+    }
+    .gallery{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    .box{
+        margin:2rem 0;
+        
+    }
+    .box h3{
+        margin: auto 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    footer{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid red; */
+        paddding-bottom: 2rem;
+    }
+    footer a{
+        text-decoration: none;
+        margin: auto 0;
+        font-size: 2rem;
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+    footer a:hover{
+        background-color:black;
+        color:white;
+    }
+}
